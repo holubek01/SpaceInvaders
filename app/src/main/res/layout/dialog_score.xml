@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/insets"
+    android:gravity="center"
+    android:weightSum="10"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/title"
+        android:autoSizeTextType="uniform"
+        app:autoSizeMinTextSize="20sp"
+        app:autoSizeMaxTextSize="50sp"
+        android:layout_margin="10sp"
+        app:autoSizeStepGranularity="10sp"
+        android:maxLines="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:text="Gratulacje !"
+        android:layout_weight="1.4"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_weight="4"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:srcCompat="@drawable/cup" />
+
+    <TextView
+        android:id="@+id/info"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="Wynik: "
+        android:layout_weight="1"
+        android:autoSizeTextType="uniform"
+        app:autoSizeMinTextSize="20sp"
+        app:autoSizeMaxTextSize="50sp"
+        app:autoSizeStepGranularity="10sp"
+
+        android:textAlignment="center"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.6"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:gravity="center">
+        <Button
+            android:id="@+id/restart_btn"
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:onClick="restart"
+            app:autoSizeMinTextSize="5sp"
+            app:autoSizeMaxTextSize="20sp"
+            app:autoSizeStepGranularity="10sp"
+            android:layout_marginBottom="5sp"
+            android:maxLines="1"
+            android:textAlignment="gravity"
+            android:autoSizeTextType="uniform"
+            android:text="Zagraj ponownie" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.6"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:gravity="center">
+        <Button
+            android:id="@+id/exit_btn"
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:onClick="restart"
+            app:autoSizeMinTextSize="20sp"
+            app:autoSizeMaxTextSize="20sp"
+            app:autoSizeStepGranularity="10sp"
+            android:maxLines="1"
+            android:textAlignment="gravity"
+            android:autoSizeTextType="uniform"
+            android:layout_marginBottom="5sp"
+            android:text="Zakończ grę"  />
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
